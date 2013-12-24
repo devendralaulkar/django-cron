@@ -6,7 +6,7 @@ import traceback
 from django.core.management.base import BaseCommand
 from django.conf import settings
 from django.core.cache import cache
-from django_cron import CronJobManager
+from ... import CronJobManager
 try:
     from django.utils import timezone
 except ImportError:
